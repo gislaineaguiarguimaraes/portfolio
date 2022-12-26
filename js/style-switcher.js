@@ -36,32 +36,41 @@ function setActiveStyle(color) {
 /*====== theme light and dark mode======*/
 
 const dayNight = document.querySelector('.day-night')
-const logoLight = '../images/logo2.png'
-const logoDark = '../images/logo1.png'
 
 dayNight.addEventListener('click', () => {
   //toggle alterna entre adicionar e remover um ou mais nomes de classes
   dayNight.querySelector('i').classList.toggle('fa-sun')
   dayNight.querySelector('i').classList.toggle('fa-moon')
+
   document.body.classList.toggle('dark')
+  changeLogo()
 })
+
+function changeLogo() {
+  const logoLight = '../images/logo2.png'
+  const logoDark = '../images/logo1.png'
+  const div = document.querySelector('.logo')
+  const img = document.createElement('img')
+
+  if (document.body.classList.contains('dark')) {
+    img.src = logoLight
+    img.alt = 'logo clair'
+    div.innerHTML = ' '
+    div.appendChild(img)
+  } else {
+    img.src = logoDark
+    img.alt = 'logo sombre'
+    div.innerHTML = ' '
+    div.appendChild(img)
+  }
+}
 
 window.addEventListener('load', () => {
   if (document.body.classList.contains('dark')) {
-    changeLogo(logoLight)
+    changeLogo()
     dayNight.querySelector('i').classList.add('fa-sun')
-    console.log('aqui')
   } else {
+    changeLogo()
     dayNight.querySelector('i').classList.add('fa-moon')
-    changeLogo(logoDark)
-    console.log('ali')
   }
 })
-
-function changeLogo(image) {
-  const div = document.querySelector('.logo')
-  const img = document.createElement('img')
-  img.src = image
-  img.alt = 'logo'
-  div.appendChild(img)
-}
