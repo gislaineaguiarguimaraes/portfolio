@@ -2,10 +2,10 @@
 
 //Fazendo a ligação com a div que está escondida
 const styleSwitcherToggle = document.querySelector('.style-switcher-toggler')
-//Criando eveno de escuta que reage no click e mostrar a div com opções de cores
+//Criando evento de escuta que reage no click e mostrar a div com opções de cores
 styleSwitcherToggle.addEventListener('click', () => {
   //ao click a div ganha o estilo definido no css ".open"
-  console.log('funciona')
+
   document.querySelector('.style-switcher').classList.toggle('open')
 })
 

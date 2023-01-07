@@ -1,0 +1,133 @@
+/*Home*/
+.home-block {
+  max-width: 1000px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  color: var(--text-black-700);
+}
+
+.home .home-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 70%; /*le texte occupera 60% de l'espace disponible*/
+  max-width: 60%;
+}
+
+h3.hello {
+  font-size: 24px;
+}
+
+h3.hello span {
+  font-size: 40px;
+  font-family: 'Sacramento', cursive;
+  font-weight: 600;
+  color: var(--skin-color);
+}
+
+h3.my-profession {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.typing {
+  color: var(--skin-color);
+}
+
+.home-info p {
+  font-size: 18px;
+  color: var(--text-black-700);
+  padding-right: 20px;
+}
+
+.home .home-img {
+  display: flex;
+  flex: 0 0 30%; /*le texte occupera 65% de l'espace disponible*/
+  max-width: 30%;
+  margin-right: 40px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.home-img-animation {
+  position: relative;
+  width: 295px;
+  min-width: 280px;
+  height: 385px;
+}
+
+.home-img-animation::after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 285px;
+  min-width: 280px;
+  background-color: var(--skin-color);
+  right: 0px;
+  bottom: 0px;
+  z-index: 12;
+}
+
+.home-img-animation::before {
+  content: '';
+  position: absolute;
+  height: 375px;
+  width: 285px;
+  min-width: 280px;
+  border: 20px solid var(--skin-color);
+  border-bottom: none;
+  right: 0px;
+  top: 0;
+}
+
+.home-img-animation img {
+  position: relative;
+  height: 400px;
+  width: 340px;
+  z-index: 10;
+  margin-top: -25px;
+}
+
+@media (min-width: 1300px) {
+  h3.hello {
+    font-size: 26px;
+  }
+
+  h3.hello span {
+    font-size: 44px;
+    padding-left: 15px;
+  }
+
+  h3.my-profession {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+  .home-info p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .home .home-info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 991px) {
+  .home .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home .home-img {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .home-block {
+    margin-top: 150px;
+  }
+}

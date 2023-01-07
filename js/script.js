@@ -1,7 +1,6 @@
 /*========== typing animation ==========*/
 var typed = new Typed('.typing', {
   strings: [
-    '',
     'Développeuse web',
     'Disponible',
     'Curieuse',
@@ -96,3 +95,13 @@ function asideSectionTogglerBtn() {
     allSection[i].classList.toggle('open')
   }
 }
+//Função para animação de scroll da pagina about
+const scrollAbout = document.querySelector('.scroll-animation')
+scrollAbout.addEventListener('click', () => {
+  window.scroll()
+  console.log('cliquei')
+})
+
+console.log(window)
+
+window.addEventListener('scroll', (event) => {})

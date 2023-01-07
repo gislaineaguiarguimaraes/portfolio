@@ -10,6 +10,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aside.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/skins/color-1.css" />
     <!--===== Style Switcher=====-->
     <link
@@ -31,6 +36,13 @@
       href="css/skins/color-3.css"
       class="alternate-style"
       title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="css/skins/color-4.css"
+      class="alternate-style"
+      title="color-4"
       disabled
     />
     <link rel="stylesheet" href="css/style-switcher.css" />
@@ -70,213 +82,235 @@
       <div class="main-content">
         <!--==== Home Section Start ====-->
         <section class="home active section" id="home">
-          <div class="container flex">
-            <div class="row">
-              <div class="home-img">
+          <div class="home-block">
+            <div class="home-img">
+              <div class="home-img-animation">
                 <img src="images/profile5.png" alt="Photo profil" />
               </div>
-              <div class="home-info padd-15">
-                <h3 class="hello">
-                  Bonjour, je m'appelle
-                  <span class="name">Gislaine Guimarães</span>
-                </h3>
-                <h3 class="my-profession">
-                  Je suis <span class="typing">développeuse Web</span>
-                </h3>
-                <p>
-                  J'apprends actuellement le métier de développeur web. J'ai
-                  commencé mon autoformation en décembre 2021, et je continue
-                  mon apprentissage pour apprendre de plus en plus et maîtriser
-                  les différents outils nécessaires à mon épanouissement en tant
-                  que développeuse. Vous trouverez ici tous les projets réalisés
-                  lors de ma formation ainsi que mes projets en cours.
-                </p>
-                <a href="#" class="btn">Télécharger mon CV</a>
-              </div>
+            </div>
+            <div class="home-info padd-15">
+              <h3 class="hello">
+                Bonjour, je m'appelle
+                <span class="name"> Gislaine de Aguiar</span>
+              </h3>
+              <h3 class="my-profession">
+                Je suis <span class="typing"></span>
+              </h3>
+              <p>
+                Actuellement, j’apprends le métier de développeuse de sites et
+                d’applications web.
+              </p>
+              <p>
+                Venant tout juste de terminer ma formation de développeur
+                intégrateur Web de chez Openclassrooms, je suis à la recherche
+                d'une alternance afin d'avoir l'opportunité de poursuivre mes
+                études, acquérir des nouvelles connaissances, de l'expérience et
+                pouvoir montrer tout ce que j'ai appris jusqu'ici.
+              </p>
+              <p>
+                Vous trouverez ici les projets réalisés pendant ma formation et
+                mes projets en cours.
+              </p>
+
+              <a
+                href="datas/Cv Gislaine (1).pdf"
+                download="CV_Gislaine"
+                class="btn"
+                >Télécharger mon CV</a
+              >
             </div>
           </div>
         </section>
         <!--==== Home section End ====-->
         <!--==== About Section Start ====-->
-        <section class="about section hidden" id="about">
-          <div class="container">
-            <div class="row">
-              <div class="section-title padd-15">
-                <h2>A propos de moi</h2>
-              </div>
+        <section class="about section hidden padd-15" id="about">
+          <div class="about-block">
+            <div class="section-title padd-15">
+              <h2>A propos de moi</h2>
             </div>
-            <div class="row">
-              <div class="about-content padd-15">
-                <div class="row">
-                  <div class="about-text padd-15">
-                    <h3>
-                      Moi c'est Gislaine et je suis
-                      <span> Développeuse Web junior</span>
-                    </h3>
-                    <p>
-                      Avec plus de 10 ans d'expérience dans le secteur de la
-                      restauration. La pandémie et les difficultés des dernières
-                      années m'ont motivé à me réinventer et à chercher de
-                      nouvelles orientations dans ma carrière.
-                    </p>
-                    <p>
-                      J'ai décidé de m'orienter vers le domaine de la
-                      programmation qui m'a toujours captivé. Aujourd'hui je me
-                      retrouve chaque jour plus passionnée de ce nouveau monde,
-                      et plus motivé que jamais pour en savoir plus et m'établir
-                      en tant que développeuse frontend.
-                    </p>
-                  </div>
+            <div class="about-content padd-15">
+              <div class="about-content-info">
+                <div class="about-text">
+                  <h3>
+                    Je suis en formation pour devenir... <br />
+                    <span> Développeuse front-end - JavaScript React .</span>
+                  </h3>
+                  <p>
+                    Dans le milieu de la restauration depuis plus de 10 ans, la
+                    pandémie et le désir de changement m'ont poussé à me
+                    réinventer et à chercher de nouvelles orientations dans ma
+                    carrière. <br />
+                    De nature curieuse, j'ai commencé mon autoformation en
+                    développement web, histoire de voir où cela pouvait me
+                    mener. Je me suis retrouvée amoureuse de l'univers de la
+                    programmation et depuis, je consacre tous mes efforts à
+                    améliorer mes connaissances dans ce domaine. <br />
+                    Venant tout juste de terminer ma formation de développeur
+                    intégrateur Web de chez Openclassrooms, je suis à la
+                    recherche d'une alternance afin d'avoir l'opportunité de
+                    poursuivre mes études, acquérir des nouvelles connaissances,
+                    de l'expérience et pouvoir montrer tout ce que j'ai appris
+                    jusqu'ici.
+                  </p>
                 </div>
-                <div class="row">
-                  <div class="personal-info padd-15">
-                    <div class="row">
-                      <div class="info-item padd-15">
-                        <p>Âge : <span>38 ans</span></p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>
-                          Email :
-                          <span
-                            ><a href="malito:gis_guimaraes@hotmail.com"
-                              >gis_guimaraes@hotmail.com</a
-                            ></span
-                          >
-                        </p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>Téléphone : <span>07.53.21.23.83</span></p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>
-                          Linkedin :
-                          <span
-                            ><a
-                              href="https://www.linkedin.com/in/gislaine-de-aguiar-guimaraes/"
-                              target="_blank"
-                              >/in/GislaineGuimaraes</a
-                            ></span
-                          >
-                        </p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>Diplôme : <span>Développeur Web</span></p>
-                      </div>
-                      <div class="info-item padd-15">
-                        <p>
-                          GitHub :
-                          <span
-                            ><a
-                              href="https://github.com/gislaineaguiarguimaraes"
-                              target="_blank"
-                              >GislaineGuimaraes</a
-                            ></span
-                          >
-                        </p>
-                      </div>
+                <div class="scroll-animation">
+                  <i class="fa-solid fa-angles-down"></i>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Nationalité : <span>Brésilienne</span></p>
                     </div>
-                    <div class="row">
-                      <div class="buttons padd-15">
-                        <a
-                          href="#contact"
-                          data-section-index=""
-                          class="btn hire-me"
-                          >Contactez-moi</a
+                    <div class="info-item padd-15">
+                      <p>
+                        Email :
+                        <span
+                          ><a href="malito:gis_guimaraes@hotmail.com"
+                            >gis_guimaraes@hotmail.com</a
+                          ></span
                         >
-                      </div>
+                      </p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Téléphone : <span>07.53.21.23.83</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>
+                        Linkedin :
+                        <span
+                          ><a
+                            href="https://www.linkedin.com/in/gislaine-de-aguiar-guimaraes/"
+                            target="_blank"
+                            >/in/GislaineGuimaraes</a
+                          ></span
+                        >
+                      </p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Diplôme : <span>Développeur Web</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>
+                        GitHub :
+                        <span
+                          ><a
+                            href="https://github.com/gislaineaguiarguimaraes"
+                            target="_blank"
+                            >GislaineGuimaraes</a
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a
+                        href="#contact"
+                        data-section-index=""
+                        class="btn hire-me"
+                        >Contactez-moi</a
+                      >
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="education padd-15">
-                    <h3 class="title">Education</h3>
-                    <div class="row">
-                      <div class="timeline-box padd-15">
-                        <div class="timeline shadow-dark">
-                          <!--====timeline item====-->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2022 à Aujourd'hui
-                            </h3>
-                            <h4 class="timeline-title">Développement Web</h4>
-                            <p class="timeline-text">
-                              Intégration de maquettes en html et Css (dont
-                              Sass) <br />
-                              Dynamiser un site web avec des animations (Css)<br />
-                              Optimiser un site web existant (SEO) <br />
-                              Construire un site de e-commerce en javascript
-                              <br />
-                              Construire une API sécurisée<br />
-                              Créez une application web de location immobilière
-                              avec React<br />
-                            </p>
-                          </div>
-                          <!--====timeline item====-->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2022 à Aujourd'hui
-                            </h3>
-                            <h4 class="timeline-title">Développement Web</h4>
-                            <p class="timeline-text">
-                              Intégration de maquettes en html et Css (dont
-                              Sass) <br />
-                              Dynamiser un site web avec des animations (Css)<br />
-                              Optimiser un site web existant (SEO) <br />
-                              Construire un site de e-commerce en javascript
-                              <br />
-                              Construire une API sécurisée<br />
-                              Créez une application web de location immobilière
-                              avec React<br />
-                            </p>
-                          </div>
+              </div>
+              <div class="row">
+                <div class="education padd-15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!--====timeline item====-->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> 2023 (à venir)
+                          </h3>
+                          <h4 class="timeline-title">
+                            Développeur d'application - JavaScript React
+                          </h4>
+                          <p class="timeline-text">
+                            Intégration de maquettes en html et Css (dont Sass)
+                            <br />
+                            Dynamiser un site web avec des animations (Css)<br />
+                            Créer une landing page avec Javascript <br />
+                            Créer un site accessible pour une plateforme de
+                            photographes
+                            <br />
+                            Développer un algorithme de recherche en
+                            JavaScript<br />
+                            Débugger et tester un SaaS RH<br />
+                            Développer une application Web avec React et React
+                            Router <br />
+                            Développer un tableau de bord d'analytics avec React
+                          </p>
+                        </div>
+                        <!--====timeline item====-->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i> Juin 2022 - Décembre
+                            2022
+                          </h3>
+                          <h4 class="timeline-title">Développement Web</h4>
+                          <p class="timeline-text">
+                            Intégration de maquettes en html et Css (dont Sass)
+                            <br />
+                            Dynamiser un site web avec des animations (Css)<br />
+                            Optimiser un site web existant (SEO) <br />
+                            Construire un site de e-commerce en javascript
+                            <br />
+                            Construire une API sécurisée<br />
+                            Créez une application web de location immobilière
+                            avec React<br />
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="experience padd-15">
-                    <h3 class="title">Mon expérience</h3>
-                    <div class="row">
-                      <div class="timeline-box padd-15">
-                        <div class="timeline shadow-dark">
-                          <!--====timeline item====-->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i>Décembre 2017 - Mai
-                              2021
-                            </h3>
-                            <h4 class="timeline-title">
-                              Responsable de Salle / Restaurant Papillon
-                            </h4>
-                            <p class="timeline-text">
-                              Organisation du travail et planification des
-                              horaires <br />
-                              Former et accompagner l'équipe<br />
-                              Développer la rentabilité<br />
-                              Contrôle et gestion des stocks<br />
-                              Garantir la bonne expérience du client<br />
-                            </p>
-                          </div>
-                          <!--====timeline item====-->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i>Avril 2017 - Octobre
-                              2017
-                            </h3>
-                            <h4 class="timeline-title">Chef de Rang</h4>
-                            <p class="timeline-text">
-                              Accueillir et installer le client<br />
-                              Présenter et conseiller des plats<br />
-                              Travailler en équipe avec le commis de salle
-                              <br />
-                              Assurer la rapidité et l'organisation du
-                              service<br />
-                              Service et débarrassage des plats <br />
-                            </p>
-                          </div>
+                </div>
+                <div class="experience padd-15">
+                  <h3 class="title">Mon expérience</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!--====timeline item====-->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i>Décembre 2017 - Mai
+                            2021
+                          </h3>
+                          <h4 class="timeline-title">
+                            Responsable de Salle / Restaurant Papillon
+                          </h4>
+                          <p class="timeline-text">
+                            Organisation du travail et planification des
+                            horaires <br />
+                            Former et accompagner l'équipe<br />
+                            Développer la rentabilité<br />
+                            Contrôle et gestion des stocks<br />
+                            Garantir la bonne expérience du client<br />
+                          </p>
+                        </div>
+                        <!--====timeline item====-->
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i>Avril 2017 - Octobre
+                            2017
+                          </h3>
+                          <h4 class="timeline-title">Chef de Rang</h4>
+                          <p class="timeline-text">
+                            Accueillir et installer le client<br />
+                            Présenter et conseiller des plats<br />
+                            Travailler en équipe avec le commis de salle
+                            <br />
+                            Assurer la rapidité et l'organisation du service<br />
+                            Service et débarrassage des plats <br />
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -289,7 +323,7 @@
         <!--==== About Section End ====-->
         <!--==== Portfolio Section Start ====-->
         <section class="portfolio section hidden" id="portfolio">
-          <div class="container">
+          <div class="portfolio-block">
             <div class="row">
               <div class="section-title padd-15">
                 <h2>Portfolio</h2>
@@ -421,7 +455,10 @@
               <div class="portfolio-item padd-15">
                 <h2>
                   Kasa
-                  <a href="https://kasa-gislaine.vercel.app/" target="_blank">
+                  <a
+                    href="https://github.com/gislaineaguiarguimaraes/Kasa"
+                    target="_blank"
+                  >
                     <i class="fa-brands fa-github"></i>
                   </a>
                 </h2>
@@ -440,7 +477,7 @@
         <!--==== Portfolio Section End ====-->
         <!--==== Contact Section Start ====-->
         <section class="contact section" id="contact">
-          <div class="container column">
+          <div class="contact-block">
             <div class="row">
               <div class="section-title padd-15">
                 <h2>Contactez-Moi</h2>
@@ -519,6 +556,7 @@
         <span class="color-1" onclick="setActiveStyle('color-1')"></span>
         <span class="color-2" onclick="setActiveStyle('color-2')"></span>
         <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
       </div>
     </div>
     <!--==== Style Switcher End====-->
