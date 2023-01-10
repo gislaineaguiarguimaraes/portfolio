@@ -45,11 +45,28 @@
   background-color: var(--bg-black-900);
   border-radius: 5px;
   border: 1px solid var(--bg-black-50);
-  transition: all 0.3s ease;
+  transition: all 0.5s ease-in-out;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .scroll-animation i:hover {
   transform: scale(1.25);
+  color: var(--skin-color);
+  animation: none;
 }
 .personal-info {
   flex: 0 0 100%;
@@ -99,12 +116,12 @@
   color: var(--text-black-900);
 }
 
-.about .about-content .timeline-box {
+.timeline-box {
   flex: 0 0 100%;
   max-width: 100%;
 }
 
-.about .about-content .timeline {
+.timeline {
   background-color: var(--bg-black-100);
   padding: 30px 15px;
   border: 1px solid var(--bg-black-50);
@@ -171,8 +188,14 @@
 }
 
 @media (min-width: 1300px) {
+  .about-text h3 {
+    font-size: 28px;
+  }
   .about-text {
     margin-top: 100px;
+  }
+  .info-item p {
+    font-size: 18px;
   }
 }
 @media (min-width: 991px) {
