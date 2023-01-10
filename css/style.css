@@ -50,17 +50,6 @@ ul {
   padding-right: 15px;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-.column {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -95,10 +84,6 @@ ul {
 .shadow-dark {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-
-/*.hidden{
-    display: none !important;
-}*/
 
 .section {
   background: var(--bg-black-900);
