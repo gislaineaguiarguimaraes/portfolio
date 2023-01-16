@@ -1,19 +1,18 @@
 /*Home*/
 .home-block {
   max-width: 1300px;
-  height: 100vh;
-  margin: auto;
+  margin: 90px auto 0;
   display: flex;
-  align-items: center;
   color: var(--text-black-700);
+  overflow: hidden;
 }
 
 .home .home-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   flex: 0 0 70%; /*le texte occupera 60% de l'espace disponible*/
   max-width: 60%;
+  margin-right: 20px;
 }
 
 h3.hello {
@@ -53,45 +52,33 @@ h3.my-profession {
 }
 
 .home-img-animation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   position: relative;
-  width: 295px;
-  min-width: 280px;
+  width: 85%;
+  max-width: 263px;
   height: 385px;
-}
-
-.home-img-animation::after {
-  content: '';
-  position: absolute;
-  height: 20px;
-  width: 302px;
-  min-width: 302px;
-  background-color: var(--skin-color);
-  right: 0px;
-  bottom: -10px;
-  z-index: 12;
-}
-
-.home-img-animation::before {
-  content: '';
-  position: absolute;
-  height: 375px;
-  width: 302px;
-  min-width: 302px;
   border: 20px solid var(--skin-color);
-  border-bottom: none;
-  right: 0px;
-  top: 0;
 }
 
 .home-img-animation img {
   position: relative;
-  height: 400px;
-  width: 300px;
+  height: 380px;
+  width: 230px;
   z-index: 10;
   margin-top: -25px;
 }
 
 @media (min-width: 1300px) {
+  .home-block {
+    height: 100%;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .home-img-animation {
+    margin-top: -70px;
+  }
   h3.hello {
     font-size: 26px;
   }
@@ -114,9 +101,15 @@ h3.my-profession {
   .home .home-info {
     flex-direction: column;
   }
+  h3.hello {
+    font-size: 20px;
+  }
+  h3.hello span {
+    font-size: 34px;
+  }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1078px) {
   .home .home-info {
     flex: 0 0 100%;
     max-width: 100%;

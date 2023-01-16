@@ -51,17 +51,20 @@ function changeLogo() {
   const logoDark = '../images/logo1.png'
   const div = document.querySelector('.logo')
   const img = document.createElement('img')
+  const aside = document.querySelector('.aside')
 
   if (document.body.classList.contains('dark')) {
     img.src = logoLight
     img.alt = 'logo clair'
     div.innerHTML = ' '
     div.appendChild(img)
+    aside.style.background = '#151515'
   } else {
     img.src = logoDark
     img.alt = 'logo sombre'
     div.innerHTML = ' '
     div.appendChild(img)
+    aside.style.background = 'white'
   }
 }
 
