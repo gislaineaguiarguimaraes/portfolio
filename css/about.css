@@ -7,6 +7,11 @@
   margin: 80px auto;
 }
 
+.about-text {
+  height: 100%;
+  position: relative;
+}
+
 .about-text h3 {
   font-size: 24px;
   margin-bottom: 15px;
@@ -28,9 +33,14 @@
 .about-content-info {
   height: 70vh;
   position: relative;
+  margin-right: 50px;
 }
 
 .scroll-animation {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%);
   width: 100%;
   text-align: center;
 }
@@ -71,8 +81,9 @@
 }
 
 .info-item {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 48%;
+  max-width: 48%;
+  margin-right: 10px;
 }
 
 .info-item p {
@@ -99,11 +110,15 @@
 
 .education,
 .experience {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 48%;
+  max-width: 48%;
   margin-top: 30px;
+  margin-right: 15px;
 }
 
+.row-education {
+  flex-wrap: nowrap;
+}
 .about-content h3.title {
   font-size: 24px;
   margin-bottom: 30px;
@@ -187,25 +202,29 @@
     font-size: 28px;
   }
   .about-text {
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .info-item p {
     font-size: 18px;
   }
 }
-@media (min-width: 991px) {
-  .info-item p span {
-    display: block;
-    margin-left: 0;
+@media (max-width: 911px) {
+  .scroll-animation i {
+    margin: -10px;
   }
 }
-
 @media (max-width: 767px) {
+  .about .about-block .section-title {
+    padding-left: 0;
+  }
+  .about-content,
   .experience,
   .education,
   .personal-info {
     flex: 0 0 100%;
     max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
   .about-content-info {
     height: 100%;
@@ -213,8 +232,16 @@
   .info-item {
     flex: 0 0 100%;
     max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
   .scroll-animation {
     display: none;
+  }
+  .timeline-item {
+    padding-left: 20px;
+  }
+  .btn-about {
+    margin: auto;
   }
 }

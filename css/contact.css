@@ -2,16 +2,16 @@
 .contact-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   max-width: 1000px;
   height: 100vh;
+  margin: 80px auto;
 }
 
 .contact-title {
   color: var(--skin-color);
   text-align: center;
   font-size: 25px;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .contact-sub-title {
@@ -70,7 +70,13 @@
     flex: 0 0 50%;
     max-width: 50%;
   }
+}
+@media (max-width: 767px) {
+  .contact .contact-info-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
   .contact-block {
-    margin-top: 50px;
+    margin: 100px auto;
   }
 }

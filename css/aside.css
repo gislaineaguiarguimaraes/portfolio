@@ -18,9 +18,11 @@
 .aside .logo img {
   position: absolute;
   top: 5%;
-  left: 10%;
+  left: 50%;
+  transform: translate(-50%);
   width: 200px;
   height: 170px;
+  margin-bottom: 20px;
 }
 
 .aside .nav-toggler {
@@ -110,30 +112,17 @@
 @media (max-width: 1078px) {
   .aside {
     transform: translateX(100%);
-    /*right: -300px;*/
   }
   .aside.open {
     transform: translateX(0%);
-    /*right: 0px;*/
     transition: all 1s ease;
-  }
-  .aside .logo img {
-    width: 230px;
-    height: 200px;
   }
   .aside .nav-toggler {
     display: flex;
     margin-right: 20px;
-    /*right: 0px;*/
   }
   .aside .nav-toggler.open {
     right: 0px;
     transition: all 1s ease;
   }
 }
-
-/*@media (max-width: 450px) {
-  .aside {
-    width: 100%;
-  }
-} ;*/
