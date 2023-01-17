@@ -64,6 +64,9 @@
 .contact .contact-info-item p a:hover {
   color: var(--skin-color);
 }
+.title-fin {
+  margin-bottom: 50px;
+}
 
 @media (max-width: 1199px) {
   .contact .contact-info-item {
