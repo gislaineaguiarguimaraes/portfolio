@@ -52,18 +52,19 @@ h3.my-profession {
 }
 
 .home-img-animation {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   width: 90%;
-  max-width: 280px;
-  height: 420px;
+  max-width: 310px;
+  height: 440px;
   border: 18px solid var(--skin-color);
 }
 
 .home-img-animation img {
-  height: 380px;
-  width: 245px;
+  height: 400px;
+  width: 280px;
   z-index: 10;
   margin-top: -25px;
 }

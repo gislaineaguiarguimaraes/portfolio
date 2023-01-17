@@ -11,6 +11,9 @@
   margin-bottom: 40px;
 }
 
+.row-project {
+  margin-right: 50px;
+}
 .portfolio .portfolio-heading h2 {
   color: var(--text-black-700);
   font-weight: 500;
@@ -44,7 +47,11 @@
   width: 100%;
   display: block;
 }
-
+@media (max-width: 1078px) {
+  .row-project {
+    margin-right: 0px;
+  }
+}
 @media (max-width: 991px) {
   .portfolio-item {
     flex: 0 0 50%;
