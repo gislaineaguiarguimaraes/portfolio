@@ -65,7 +65,7 @@
   color: var(--skin-color);
 }
 .title-fin {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 @media (max-width: 1199px) {
