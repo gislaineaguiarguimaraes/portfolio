@@ -58,13 +58,16 @@ h3.my-profession {
   align-items: flex-end;
   width: 90%;
   max-width: 290px;
-  height: 420px;
+  min-width: 290px;
+  height: 400px;
   border: 18px solid var(--skin-color);
+  z-index: 12;
 }
 
 .home-img-animation img {
   height: 390px;
-  width: 270px;
+  width: 100%;
+  max-width: 280px;
   z-index: 10;
 }
 
