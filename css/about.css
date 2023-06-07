@@ -5,11 +5,11 @@
   justify-content: center;
   max-width: 1000px;
   margin: 80px auto;
+  position: relative;
 }
 
 .about-text {
   height: 100%;
-  position: relative;
 }
 
 .about-text h3 {
@@ -32,14 +32,14 @@
 
 .about-content-info {
   height: 70vh;
-  position: relative;
+
   margin-right: 50px;
 }
 
 .scroll-animation {
   position: absolute;
   left: 50%;
-  bottom: 0%;
+  top: 0;
   transform: translate(-50%);
   width: 100%;
   text-align: center;
@@ -49,10 +49,10 @@
   font-size: 30px;
   margin: 20px;
   padding: 8px;
-  color: var(--text-black-700);
+  color: var(--skin-color);
   background-color: var(--bg-black-900);
-  border-radius: 5px;
-  border: 1px solid var(--bg-black-50);
+  border-radius: 15px;
+  border: 1px solid var(--skin-color);
   transition: all 0.5s ease-in-out;
   animation: animate 2s linear infinite;
 }
@@ -71,7 +71,6 @@
 
 .scroll-animation i:hover {
   transform: scale(1.25);
-  color: var(--skin-color);
   animation: none;
 }
 .personal-info {

@@ -2,9 +2,10 @@
 .contact-block {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 1000px;
-  height: auto;
-  margin: 80px auto;
+  height: 100vh;
+  margin: 70px auto;
 }
 
 .contact-title {
