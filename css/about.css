@@ -211,7 +211,10 @@
     margin: -10px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .about-block {
+    margin: 100px auto 0 auto;
+  }
   .about .about-block .section-title {
     padding-left: 0;
   }

@@ -5,7 +5,6 @@
   justify-content: center;
   max-width: 1000px;
   height: 100vh;
-  margin: 70px auto;
 }
 
 .contact-title {
@@ -65,9 +64,6 @@
 .contact .contact-info-item p a:hover {
   color: var(--skin-color);
 }
-.title-fin {
-  margin-bottom: 150px;
-}
 
 @media (max-width: 1199px) {
   .contact .contact-info-item {
@@ -77,10 +73,17 @@
 }
 @media (max-width: 767px) {
   .contact .contact-info-item {
+    flex: auto;
+  }
+}
+
+@media (max-width: 376px) {
+  .contact-block {
+    height: auto;
+    margin: 100px auto 0 auto;
+  }
+  .contact .contact-info-item {
     flex: 0 0 100%;
     max-width: 100%;
-  }
-  .contact-block {
-    margin: 100px auto;
   }
 }
